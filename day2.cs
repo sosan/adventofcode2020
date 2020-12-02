@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 class DayTwoClass
 {
-    // public static void DayTwo(string[] args)
-    public static void Main(string[] args)
+    // public static void Main(string[] args)
+    public static void DayTwo(string[] args)
     {
         List<Tuple<int, int, string, string>> inputs = new List<Tuple<int, int, string, string>>()
         {
