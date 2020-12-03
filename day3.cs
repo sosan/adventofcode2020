@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 
-class DayThreeClass
+class Day3Class
 {
-    public static void DayThree(string[] args)
+    public void Start()
     {
+
+        Console.WriteLine("****** DIA 3 ******");
 
         string[] lines = System.IO.File.ReadAllLines(@"./inputs_dia3.txt");
         
@@ -20,43 +22,50 @@ class DayThreeClass
             inputs.Add(lines[j].ToCharArray());
         }
 
-        uint contador_slope1 = calcularmatriz(lines.Length, inputs, 1, 1);
-        uint contador_slope2 = calcularmatriz(lines.Length, inputs, 3, 1);
-        uint contador_slope3 = calcularmatriz(lines.Length, inputs, 5, 1);
-        uint contador_slope4 = calcularmatriz(lines.Length, inputs, 7, 1);
-        uint contador_slope5 = calcularmatriz(lines.Length, inputs, 1, 2);
+        {
+            //fase 2
+            uint contador_slope1 = calcularmatriz(lines.Length, inputs, 1, 1);
+            uint contador_slope2 = calcularmatriz(lines.Length, inputs, 3, 1);
+            uint contador_slope3 = calcularmatriz(lines.Length, inputs, 5, 1);
+            uint contador_slope4 = calcularmatriz(lines.Length, inputs, 7, 1);
+            uint contador_slope5 = calcularmatriz(lines.Length, inputs, 1, 2);
 
-        Console.WriteLine("contador slope1=" + contador_slope1);
-        Console.WriteLine("contador slope2=" + contador_slope2);
-        Console.WriteLine("contador slope3=" + contador_slope3);
-        Console.WriteLine("contador slope4=" + contador_slope4);
-        Console.WriteLine("contador slope5=" + contador_slope5);
+            Console.WriteLine("contador slope1=" + contador_slope1);
+            Console.WriteLine("contador slope2=" + contador_slope2);
+            Console.WriteLine("contador slope3=" + contador_slope3);
+            Console.WriteLine("contador slope4=" + contador_slope4);
+            Console.WriteLine("contador slope5=" + contador_slope5);
 
-        uint multiplicacion = (contador_slope1 * contador_slope2 * contador_slope3 * contador_slope4 * contador_slope5);
-        Console.WriteLine("Resultado final=" + multiplicacion);
+            uint multiplicacion = (contador_slope1 * contador_slope2 * contador_slope3 * contador_slope4 * contador_slope5);
+            Console.WriteLine("Resultado final=" + multiplicacion);
+        }
 
-        //fase 1        
-        // ushort contador = 0;
-        // for (ushort i = 0; i < lines.Length; i++ )
-        // {
-        //     posX += 3;
-        //     posY++;
-        //     if (posY < lines.Length)
-        //     {
-        //         if (inputs[posY][posX] == '#')
-        //         {
-        //             contador++;
-        //         }
-        //     }
+        {
 
-        //     if (posY > lines.Length)
-        //     {
-        //         break;
-        //     }
+            //fase 1        
+            // ushort contador = 0;
+            // for (ushort i = 0; i < lines.Length; i++ )
+            // {
+            //     posX += 3;
+            //     posY++;
+            //     if (posY < lines.Length)
+            //     {
+            //         if (inputs[posY][posX] == '#')
+            //         {
+            //             contador++;
+            //         }
+            //     }
 
-        // }
+            //     if (posY > lines.Length)
+            //     {
+            //         break;
+            //     }
 
-        // Console.WriteLine("contador=" + contador);
+            // }
+
+            // Console.WriteLine("contador=" + contador);
+        }
+
 
 
         ushort calcularmatriz(int longitudLines, List<char[]> inputs, ushort sumaX, ushort sumaY)

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class DayOneClass
+class Day1Class
 {
-    public static void DayOne(string[] args)
+    public void Start()
     {
 
         List<int> inputs = new List<int>()

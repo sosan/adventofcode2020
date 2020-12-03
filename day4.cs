@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 
-class DayFourClass
+class Day4Class
 {
-    // public static void DayFour(string[] args)
-    public static void Main(string[] args)
+    // public static void Main(string[] args)
+    public void Start()
     {
 
-        
+        Console.WriteLine("****** DIA 4 ******");
 
     }
 

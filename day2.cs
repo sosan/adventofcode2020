@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-class DayTwoClass
+class Day2Class
 {
-    // public static void Main(string[] args)
-    public static void DayTwo(string[] args)
+    public void Start()
     {
         List<Tuple<int, int, string, string>> inputs = new List<Tuple<int, int, string, string>>()
         {
