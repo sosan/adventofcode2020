@@ -8,7 +8,7 @@ class Day3Class
 
         Console.WriteLine("****** DIA 3 ******");
 
-        string[] lines = System.IO.File.ReadAllLines(@"./inputs_dia3.txt");
+        string[] lines = System.IO.File.ReadAllLines(@"./inputs/inputs_dia3.txt");
         
         //generar matriz
         List<char[]> inputs = new List<char[]>();

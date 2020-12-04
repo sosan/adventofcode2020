@@ -9,7 +9,7 @@ class Day5Class
 
         Console.WriteLine("****** DIA 5 ******");
 
-        string[] lines = System.IO.File.ReadAllLines(@"./inputs_dia5.txt");
+        string[] lines = System.IO.File.ReadAllLines(@"./inputs/inputs_dia5.txt");
         
         
     }

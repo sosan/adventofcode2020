@@ -9,7 +9,7 @@ class Day4Class
 
         Console.WriteLine("****** DIA 4 ******");
 
-        string[] lines = System.IO.File.ReadAllLines(@"./inputs_dia4.txt");
+        string[] lines = System.IO.File.ReadAllLines(@"./inputs/inputs_dia4.txt");
         var t = lines.ToString();
 
         List<string> inputs = new List<string>();
@@ -36,7 +36,7 @@ class Day4Class
 
         }
 
-        // System.IO.File.WriteAllLines(@"./sana_inputs_dia4.txt", inputs);
+        // System.IO.File.WriteAllLines(@"./inputs/sana_inputs_dia4.txt", inputs);
 
         //fase 1
         Console.WriteLine("******** FASE 1 ********************");
