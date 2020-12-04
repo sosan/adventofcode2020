@@ -1011,8 +1011,12 @@ class Day2Class
 
         };
 
+        Console.WriteLine("****** DIA 2 ******");
+        Console.WriteLine("****** FASE 1 ******");
+        
         ushort contador = 0;
         
+        // fase 1
         for (ushort i = 0; i < inputs.Count; i++)
         {
             if (inputs[i].Item4.Contains(inputs[i].Item3) == false)
@@ -1020,14 +1024,36 @@ class Day2Class
                 continue;
             }
 
-            // 308
-            //fase 2
+            int freq = inputs[i].Item4.Split(inputs[i].Item3).Length - 1;
+            if (freq >= inputs[i].Item1 && freq <= inputs[i].Item2)
+            {
+                contador++;
+                // Console.WriteLine(contador + " tiene=" + inputs[i].Item4);
+
+            }
+
+
+        }
+        
+        Console.WriteLine("total=" + contador);
+        Console.WriteLine("****** FASE 2 ******");
+
+        contador = 0;
+        //fase 2
+
+        for (ushort i = 0; i < inputs.Count; i++)
+        {
+            if (inputs[i].Item4.Contains(inputs[i].Item3) == false)
+            {
+                continue;
+            }
+
             if (inputs[i].Item4.ToCharArray()[inputs[i].Item1 - 1] ==  inputs[i].Item3.ToCharArray()[0] &&
                 inputs[i].Item4.ToCharArray()[inputs[i].Item2 - 1] != inputs[i].Item3.ToCharArray()[0]
             )
             {
                 contador++;
-                Console.WriteLine(contador + " tiene=" + inputs[i].Item4);
+                // Console.WriteLine(contador + " tiene=" + inputs[i].Item4);
             }
 
             if (inputs[i].Item4.ToCharArray()[inputs[i].Item1 - 1] != inputs[i].Item3.ToCharArray()[0] &&
@@ -1035,19 +1061,11 @@ class Day2Class
             )
             {
                     contador++;
-                    Console.WriteLine(contador + " tiene=" + inputs[i].Item4);
+                    // Console.WriteLine(contador + " tiene=" + inputs[i].Item4);
 
             }
 
 
-            //fase 1
-            // int freq = inputs[i].Item4.Split(inputs[i].Item3).Length - 1;
-            // if (freq >= inputs[i].Item1 && freq <= inputs[i].Item2)
-            // {
-            //     contador++;
-            //     Console.WriteLine(contador + " tiene=" + inputs[i].Item4);
-
-            // }
 
 
         }
