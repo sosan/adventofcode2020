@@ -29,28 +29,24 @@ class Day5Class
                 verticalCurrentRange = (verticalRange.max - verticalRange.min) / 2;
                 horizontalCurrentRange = (horizontalRange.max - horizontalRange.min) / 2;
 
-                if (seatpos[j] == 'B')
+                switch(seatpos[j])
                 {
-                    verticalRange.min = (verticalRange.max - verticalCurrentRange);
-                    continue;
-                }
+                    case 'B':
+                        verticalRange.min = (verticalRange.max - verticalCurrentRange);
+                    break;
 
-                if (seatpos[j] == 'F')
-                {
-                    verticalRange.max = (verticalRange.min + verticalCurrentRange);
-                    continue;
-                }
+                    case 'F':
+                        verticalRange.max = (verticalRange.min + verticalCurrentRange);
+                    break;
 
-                if (seatpos[j] == 'L')
-                {
-                    horizontalRange.max = (horizontalRange.min + horizontalCurrentRange);
-                    continue;
-                }
+                    case 'L':
+                        horizontalRange.max = (horizontalRange.min + horizontalCurrentRange);
+                    break;
 
-                if (seatpos[j] == 'R')
-                {
-                    horizontalRange.min = (horizontalRange.max - horizontalCurrentRange);
-                    continue;
+                    case 'R':
+                        horizontalRange.min = (horizontalRange.max - horizontalCurrentRange);
+                    break;
+
                 }
 
             }
