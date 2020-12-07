@@ -21,8 +21,12 @@ class MainClass
         // Day5Class day5 = new Day5Class();
         // day5.Start();
 
-        Day6Class day6 = new Day6Class();
-        day6.Start();
+        // Day6Class day6 = new Day6Class();
+        // day6.Start();
+
+        Day7Class day7 = new Day7Class();
+        day7.Start();
+
 
     }
 

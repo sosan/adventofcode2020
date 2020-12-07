@@ -54,8 +54,6 @@ class Day6Class
 
         Console.WriteLine("Suma TOtal=" + sumagrupal);
 
-        System.IO.File.WriteAllLines(@"./inputs/sana_inputs_dia6.txt", inputs);
-
         Console.WriteLine("****** FASE 2 ******");
         //linq-u
         uint contadorGeneral = (uint)string.Join("\n", lines.ToList())
