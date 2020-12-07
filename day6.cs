@@ -8,6 +8,8 @@ class Day6Class
     public void Start()
     {
 
+        // https://adventofcode.com/2020/day/6
+
         Console.WriteLine("****** DIA 6 ******");
         
         string[] lines = System.IO.File.ReadAllLines(@"./inputs/inputs_dia6.txt");

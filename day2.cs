@@ -5,6 +5,8 @@ class Day2Class
 {
     public void Start()
     {
+
+        // https://adventofcode.com/2020/day/2
         List<Tuple<int, int, string, string>> inputs = new List<Tuple<int, int, string, string>>()
         {
             new Tuple<int, int, string, string>(1,4,"n","nnnnn"),

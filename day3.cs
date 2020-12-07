@@ -5,6 +5,7 @@ class Day3Class
 {
     public void Start()
     {
+        // https://adventofcode.com/2020/day/3
 
         Console.WriteLine("****** DIA 3 ******");
 

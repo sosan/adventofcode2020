@@ -7,6 +7,8 @@ class Day4Class
     public void Start()
     {
 
+        // https://adventofcode.com/2020/day/4
+
         Console.WriteLine("****** DIA 4 ******");
 
         string[] lines = System.IO.File.ReadAllLines(@"./inputs/inputs_dia4.txt");
