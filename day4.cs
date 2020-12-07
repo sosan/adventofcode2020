@@ -10,7 +10,6 @@ class Day4Class
         Console.WriteLine("****** DIA 4 ******");
 
         string[] lines = System.IO.File.ReadAllLines(@"./inputs/inputs_dia4.txt");
-        var t = lines.ToString();
 
         List<string> inputs = new List<string>();
         string cadena = "";
