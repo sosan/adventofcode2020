@@ -1,10 +1,21 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 class MainClass
 {
     public static void Main(string[] args)
     {
+
+        // string[] lines = File.ReadAllLines(@"./inputs/intro.txt");
+
+        // for(ushort i = 0; i < lines.Length; i++)
+        // {
+
+        //     Console.WriteLine(lines[i]);
+
+        // }
+
 
         // https://adventofcode.com/2020/day/1
         // Day1Class day1 = new Day1Class();
@@ -51,9 +62,12 @@ class MainClass
         // day11.Start();
 
         //https://adventofcode.com/2020/day/12
-        Day12Class day12 = new Day12Class();
-        day12.Start();
+        // Day12Class day12 = new Day12Class();
+        // day12.Start();
 
+        //https://adventofcode.com/2020/day/1#
+        Day13Class day13 = new Day13Class();
+        day13.Start();
 
     }
 
