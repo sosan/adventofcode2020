@@ -2,9 +2,7 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-using System.Runtime.InteropServices;
+
 
 public enum Direction { 
     Este, 
