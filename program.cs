@@ -74,8 +74,13 @@ class MainClass
         // day14.Start();
 
         //https://adventofcode.com/2020/day/15
-        Day15Class day15 = new Day15Class();
-        day15.Start();
+        // Day15Class day15 = new Day15Class();
+        // day15.Start();
+
+        //https://adventofcode.com/2020/day/16
+        Day16Class day16 = new Day16Class();
+        day16.Start();
+
 
     }
 
