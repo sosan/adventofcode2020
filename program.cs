@@ -78,9 +78,20 @@ class MainClass
         // day15.Start();
 
         //https://adventofcode.com/2020/day/16
-        Day16Class day16 = new Day16Class();
-        day16.Start();
+        // Day16Class day16 = new Day16Class();
+        // day16.Start();
 
+        //https://adventofcode.com/2020/day/17
+        // Day17Class day17 = new Day17Class();
+        // day17.Start();
+
+        //https://adventofcode.com/2020/day/18
+        // Day18Class day18 = new Day18Class();
+        // day18.Start();
+
+        //https://adventofcode.com/2020/day/19
+        Day19Class day19 = new Day19Class();
+        day19.Start();
 
     }
 
