@@ -61,8 +61,8 @@ class Day6Class
 
         uint contadorGeneral = (uint)string.Join("\n", lines.ToList())
             .Split("\n\n")
-            .Select(x => x.Split("\n").Select(l => l.ToCharArray().Distinct()))
-            .Select(g => g.Aggregate((prev, next) => prev.Intersect(next).ToList()).Count())
+            .Select(eachinput => eachinput.Split("\n").Select(element => element.ToCharArray().Distinct()))
+            .Select(element => element.Aggregate((currentElement, nextElement) => currentElement.Intersect(nextElement).ToList()).Count())
             .Sum();
 
         Console.WriteLine("contadorgeneral=" + contadorGeneral);
