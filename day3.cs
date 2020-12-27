@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 class Day3Class
 {
@@ -9,7 +10,7 @@ class Day3Class
 
         Console.WriteLine("****** DIA 3 ******");
 
-        string[] lines = System.IO.File.ReadAllLines(@"./inputs/inputs_dia3.txt");
+        string[] lines = File.ReadAllLines(@"./inputs/inputs_dia3.txt");
         
         //generar matriz
         List<char[]> inputs = new List<char[]>();

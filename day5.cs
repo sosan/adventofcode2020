@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+using System.IO;
 
 class Day5Class
 {
@@ -11,7 +11,7 @@ class Day5Class
         Console.WriteLine("****** DIA 5 ******");
         Console.WriteLine("****** FASE 1 ******");
 
-        string[] lines = System.IO.File.ReadAllLines(@"./inputs/inputs_dia5.txt");
+        string[] lines = File.ReadAllLines(@"./inputs/inputs_dia5.txt");
         List<uint> seatids = new List<uint>();
 
         for (ushort i = 0; i < lines.Length; i++)

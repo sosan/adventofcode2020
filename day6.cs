@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using System.IO;
 
 class Day6Class
 {
@@ -12,7 +12,7 @@ class Day6Class
 
         Console.WriteLine("****** DIA 6 ******");
         
-        string[] lines = System.IO.File.ReadAllLines(@"./inputs/inputs_dia6.txt");
+        string[] lines = File.ReadAllLines(@"./inputs/inputs_dia6.txt");
         
         Console.WriteLine("****** FASE 1 ******");
         List<string> inputs = new List<string>();
@@ -58,6 +58,7 @@ class Day6Class
 
         Console.WriteLine("****** FASE 2 ******");
         //linq-u
+
         uint contadorGeneral = (uint)string.Join("\n", lines.ToList())
             .Split("\n\n")
             .Select(x => x.Split("\n").Select(l => l.ToCharArray().Distinct()))
@@ -66,13 +67,6 @@ class Day6Class
 
         Console.WriteLine("contadorgeneral=" + contadorGeneral);
 
-
-
     }
-
-
-
-
-
 
 }

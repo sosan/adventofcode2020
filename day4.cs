@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+using System.IO;
 
 class Day4Class
 {
@@ -11,7 +11,7 @@ class Day4Class
 
         Console.WriteLine("****** DIA 4 ******");
 
-        string[] lines = System.IO.File.ReadAllLines(@"./inputs/inputs_dia4.txt");
+        string[] lines = File.ReadAllLines(@"./inputs/inputs_dia4.txt");
 
         List<string> inputs = new List<string>();
         string cadena = "";
