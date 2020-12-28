@@ -57,7 +57,7 @@ class MainClass
         // Day10Class day10 = new Day10Class();
         // day10.Start();
 
-        //https://adventofcode.com/2020/day/10
+        //https://adventofcode.com/2020/day/11
         // Day11Class day11 = new Day11Class();
         // day11.Start();
 
@@ -105,10 +105,17 @@ class MainClass
         // Day22Class day22 = new Day22Class();
         // day22.Start();
 
-
         //https://adventofcode.com/2020/day/23
-        Day23Class day23 = new Day23Class();
-        day23.Start();
+        // Day23Class day23 = new Day23Class();
+        // day23.Start();
+
+        //https://adventofcode.com/2020/day/24
+        // Day24Class day24 = new Day24Class();
+        // day24.Start();
+
+        //https://adventofcode.com/2020/day/25
+        // Day25Class day25 = new Day25Class();
+        // day25.Start();
 
 
     }
