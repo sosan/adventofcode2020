@@ -94,7 +94,6 @@ Console.WriteLine("tardao ms=" + s1.Elapsed.TotalMilliseconds);
         for (ushort turno = 0; turno < maximocontador; turno++)
         {
 
-            // next number = ?
             int lastnumber = inputs[inputs.Count - 1];
 
             bool encontrado = false;
@@ -146,18 +145,11 @@ Console.WriteLine("tardao ms=" + s1.Elapsed.TotalMilliseconds);
 
         }
 
-        // TextWriter tw = new StreamWriter(@"./inputs/inputs_dia15_f.txt");
-        // foreach (var s in inputs)
-        //     tw.WriteLine(s);
-        // tw.Close();
-
         return inputs[maximocontador - 1];
 
 
     }
 
-
-    
 
 }
 

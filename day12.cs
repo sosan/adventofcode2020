@@ -132,7 +132,8 @@ class Day12Class
         int resultadoX = Math.Abs(originalPos.x - currentPos.x);
         int resultadoY = Math.Abs(originalPos.y - currentPos.y);
         int suma = resultadoX + resultadoY;
-        Console.WriteLine("resultadoX=" + resultadoX + " resultadoY=" + resultadoY + " suma=" + suma);
+        // Console.WriteLine("resultadoX=" + resultadoX + " resultadoY=" + resultadoY + " suma=" + suma);
+        Console.WriteLine("El resultado es=" + suma);
 
         Console.WriteLine("****** FASE 2 ******");
 
@@ -205,8 +206,8 @@ class Day12Class
         resultadoX = Math.Abs(originalPos.x - currentPos.x);
         resultadoY = Math.Abs(originalPos.y - currentPos.y);
         suma = resultadoX + resultadoY;
-        Console.WriteLine("resultadoX=" + resultadoX + " resultadoY=" + resultadoY + " suma=" + suma);
-
+        // Console.WriteLine("resultadoX=" + resultadoX + " resultadoY=" + resultadoY + " suma=" + suma);
+        Console.WriteLine("El resultado es=" + suma);
 
 
     }
