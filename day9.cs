@@ -121,8 +121,8 @@ class Day9Class
 
             if (sum == resultado)
             {
-                double min = input[start];
-                double max = input[end];
+                // double min = input[start];
+                // double max = input[end];
                 // Console.WriteLine( "Min" + min + " max=" + max + " suma=" + (min + max) );
                 resultado = input[start..end].Min() + input[start..end].Max();
                 break;

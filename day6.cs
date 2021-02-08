@@ -59,9 +59,11 @@ class Day6Class
         Console.WriteLine("****** FASE 2 ******");
         //linq-u
 
-        uint contadorGeneral = (uint)string.Join("\n", lines.ToList())
+        uint contadorGeneral = 
+            (uint)string.Join("\n", lines.ToList())
             .Split("\n\n")
-            .Select(eachinput => eachinput.Split("\n").Select(element => element.ToCharArray().Distinct()))
+            .Select(eachinput => eachinput.Split("\n")
+            .Select(element => element.ToCharArray().Distinct()))
             .Select(element => element.Aggregate((currentElement, nextElement) => currentElement.Intersect(nextElement).ToList()).Count())
             .Sum();
 

@@ -127,6 +127,7 @@ class Day8Class
 
             if (currentLine > maxRange)
             {
+                Console.WriteLine(currentLine);
                 repeated = true;
                 break;
             }
